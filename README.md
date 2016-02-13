@@ -9,14 +9,23 @@ This is an Online Examination System for evalation of Studdents for any collage 
 
 Admin Can:-
 1. Admin's Login Window has a Virtual Keyboard, For the security reason. Login system is secured.
+
 2. Adding Question and answer.
+
 3. Answer of the question can be MCQ and written.
+
 4. Add Staff with there details
+
 5. Have details of all users and staff
+
 6. Can post some Messages to all students
+
 7. Add/ Delete/ Update Questions with images using online editor
+
 8. See Result 
+
 9. Print Result
+
 10. Update Profile and....etc
 
 ----------------------------
