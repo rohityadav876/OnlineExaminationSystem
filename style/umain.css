@@ -1,0 +1,286 @@
+html,body {
+margin:0;
+padding:0;
+background:#8CB99C url(../images/page.png) repeat top;
+width:100%;height:100%; 
+font-family:tahoma;
+
+}
+
+* html #wrap{
+height: 100%;
+}
+
+a img{
+border:0;
+}
+
+a{
+	color: rgba(17,102,136,1.00);
+	text-decoration: none;
+}
+a:hover{
+	color: rgba(17,102,136,0.6);;
+	text-decoration: underline;
+}
+
+a.hidden {
+text-decoration: none;
+color: #000000;
+cursor:default;
+}
+
+form {
+margin:0;
+padding:0;
+}
+
+h1 {
+font-weight: bold;
+color: #000000;
+margin: 0px; 
+font-size:15px;
+text-transform:uppercase; 
+margin: 15px 0 8px 0;
+}
+h3 {
+font-weight:bold;
+text-align:center;
+color:#bd6f2f;
+}
+h2{
+font-weight:bold;
+text-align:center;
+color:#bd6f2f;
+}
+p {
+text-align:left;
+margin-left:50px;
+margin-top:-25px;
+padding:5px;
+}
+
+.p1 {
+text-align:left;
+margin-top:25px;
+padding:5px;
+
+}
+
+.error{
+text-align:center;
+color:#FF0000;
+font-weight:bold;
+font-size:15px;
+}
+.bottom_addr {
+font-size: 11px;
+color: #000;
+padding: 5px 0 12px 0; 
+text-align:center; 
+font-size:10px;
+}
+.bottom_addr a {
+text-decoration: none;
+}
+.bottom_addr a:hover {
+text-decoration: underline;
+}
+.bottom_menu {
+color: #000000;
+text-align: center;
+padding-top: 12px;
+padding-bottom: 4px; 
+font-size:11px;
+}
+.bottom_menu a {
+color: #000000;
+text-decoration: none;
+}
+.bottom_menu a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+.body_txt {
+color: #000000;
+text-align: justify;
+padding: 10px;
+vertical-align: top;
+}
+
+.textfield {
+	font-size: 11px;
+	color: #333333;
+	padding-left: 1px;
+}
+
+#wrap{
+position:relative; 
+min-height:100%; 
+margin:0 auto; 
+width:100%;
+}
+
+#page{
+width:1000px;
+margin:0 auto; 
+padding-top:14px;
+
+}
+
+#menu{ 
+
+box-shadow: 5px 2px 5px rgba(132,129,129,1.00);
+width:939px; 
+margin:0 auto; 
+padding-left:10px;
+background:#006188; 
+position:relative; 
+height:38px; 
+overflow:hidden; 
+text-align:center;
+
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	margin-left:150px;
+}
+#menu ul li {
+	width:auto;
+	height:30px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#168;
+	background-repeat:no-repeat;
+	background-position:left center;
+	line-height:20px;
+	text-align:center;
+	margin-left:15px;
+	list-style:none;
+	padding-left:85px;
+	padding-top:10px;
+}
+#menu ul li a {
+	width:auto;
+	height:30px;
+	float:left;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#9CD5EC;
+	list-style:none;
+}
+
+#menu ul li a:hover{
+text-decoration:none;
+color:rgba(0,126,176,0.9);
+}
+
+#footer{
+width:1205px; 
+margin-left:-105px;
+height:75px; 
+background:rgba(156,213,236,0.5);
+}
+
+#center{
+width:911px; 
+margin:0 auto; 
+background:rgba(236,236,236,1.00); 
+padding:15px; 
+font-size:12px; 
+text-align:justify;
+}
+
+#reset{
+width:400px; 
+margin:0 auto; 
+background:#fff6f3; 
+padding:15px; 
+font-size:12px; 
+text-align:center;
+}
+
+#header{ 
+width:1000px;  height:276px;
+background-size: cover;
+}
+
+
+
+.stretchX {
+    width: 1000px;
+} 
+.stretchXY {
+    width: 200px; height: 300px
+}
+
+
+.td
+{
+	color:#ffffff; 
+	background:rgba(8,94,128,0.53);
+	box-shadow:1px 2px 5px rgba(156,213,236,1.00); 
+	width:90%; 
+	text-align:left;
+	border:1px solid #FFF;
+    border-collapse: collapse;
+}
+
+.td th td {
+    border: 1px solid #fff;
+}
+
+.td input
+{
+	color:#ffffff; 
+	background:rgba(181,181,181,1.00);
+	box-shadow:1px 2px 5px rgba(156,213,236,1.00); 
+	width:90%; 
+	text-align:left;
+		height:30px;
+		margin-bottom:10px;
+		margin-top:10px;
+}
+.td a {
+color:rgba(209,237,248,1.00); border:1px solid  #000000; padding:5px; padding-left:50px;padding-right:50px; background-color:rgba(28,153,159,1.00);
+}
+
+.td a:hover
+{
+color:rgba(209,237,248,0.5); border:1px solid  #000000; padding:6px; padding-left:50px;padding-right:50px; background-color:rgba(28,153,159,0.7);
+
+}
+
+.t1
+{
+	border:#bd6f2f solid 1px; background:rgba(156,213,236,0.10); box-shadow:1px 2px 1px #168; 
+	 padding:4px 6px 2px 6px;
+}
+.t1:hover
+{
+	border:#bd6f2f solid 1px; background:rgba(156,213,236,0.2); box-shadow:1px 5px 15px #168; 
+	 padding:4px 6px 2px 6px;
+}
+
+.t2
+{
+	height:100%;
+	background-color:rgba(44,165,214,1.00);
+}
+.t2 td input
+{
+	height:30px;
+	width:300px;
+}
+.t2 td select
+{
+	height:30px;
+	width:300px;
+	margin-left:-10px;
+	margin-top:20px;
+}
