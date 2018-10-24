@@ -1,42 +1,70 @@
-# OnlineExaminationSystem
-OES is a core PHP application for tacking exams with greate UI and flow. This is a complete solution for all institutions.
+---
+description: An overview on how we should write Approved Contorls
+---
 
-# Advanced Online Examination  System 
-------------
-What is this application?
+# Approved Controls
 
-This is an Online Examination System for evalation of Studdents for any collage or Institustion application with the following features:
+## Overview
 
-Admin Can:-
-1. Admin's Login Window has a Virtual Keyboard, For the security reason. Login system is secured.
+**Approved controls** are used to verify whether a particular resource is approved to be get used, based on the values set in the approved policies. This document walks you through the steps to write `Approved Controls` for a mod. 
 
-2. Adding Question and answer.
+## Getting Started
 
-3. Answer of the question can be MCQ and written.
+To Get Started with Approved Controls you need to run few commands from `turbot cli` that will generate a template for you
 
-4. Add Staff with there details
+```
+$ turbot init -r <ResourceName> -c <controlType> -y
+```
 
-5. Have details of all users and staff
+{% hint style="info" %}
+ **-c or --c \(control\):** Specify the control to add for the mod  
+**-r or --r \(resource\):** Specify the resource to add the controls to  
+**-y \(yes\):** Execute initialization action without requiring confirmation
+{% endhint %}
 
-6. Can post some Messages to all students
+Lets run this command from your terminal
 
-7. Add/ Delete/ Update Questions with images using online editor
+```text
+$ turbot init -r topic -c approved -y
+```
 
-8. See Result 
+> Note: The above step creates a file named `approved.yml` under the resource directory. `approved.yml` is auto populated along with other package files. The changes need to be made in this file for the systematic execution of the mod program. **Please refer the below mentioned mod folder structure.**
 
-9. Print Result
+```text
+<modDir>/src/<resourceName>/control/approved.yml
+```
 
-10. Update Profile and....etc
+ Now Lets go to generated file in `<modDir>/src/<resourceName>/control/approved.yml` and open it in VSCode and edit Mentioned in the following steps
 
-----------------------------
-User can:-
+### Editing the approved.yml
 
-1. Register/ Login (Login System is normal)
-2. Recover Password
-3. Update Profile
-4. Take test (Test will only begis only iff you enter right Test code send by the admin to students inbox)
-5. Use Calculator 
-6. See your history of exams
-7. Print Result
-8. Send Message to Admin
-9. Delete own messages...etc
+{% hint style="info" %}
+Change the value of **AccountId** for all the test cases.
+{% endhint %}
+
+This is the Sample Code Snippet for you from one of the several test case
+
+```text
+description: ok if multiple approved regions
+      input:
+        item:
+          Aws:
+            AccountId: TEST ACCOUNT ID //Change this to 492552618977
+            RegionName: us-west-2
+        approved: "Check: Approved"
+        approvedUsage: true
+        approvedRegions:
+          - us-west-2
+          - us-west-1
+        regions:
+          - us-west-2
+          - us-west-1
+      expected:
+        control:
+          state: ok
+```
+
+## Testing the Approved Controls
+
+Since the Approved, CMDB and Discovery controls follow similar methodology for testing, we have an independent wiki page that covers the topic. Kindly refer the below mentioned link to know about the process of testing the controls. [**Testing Control Types**](https://github.com/turbotio/turbot-mods/wiki/Testing---Control-Types)\*\*\*\*
+
